@@ -15,6 +15,7 @@ function createProductCard(name, description, price, categories) {
       <p><strong>Categorias:</strong> ${categories}</p>
     </div>
     <div>
+      <button class="edit-btn">Editar</button>
       <button class="delete-btn">Apagar</button>
     </div>
   `;
@@ -23,7 +24,14 @@ function createProductCard(name, description, price, categories) {
   card.querySelector(".delete-btn").addEventListener("click", () => {
     productList.removeChild(card);
   });
-
+  // Botão Editar
+  card.querySelector(".edit-btn").addEventListener("click", () => {
+    document.getElementById("name").value = name;
+    document.getElementById("description").value = description;
+    document.getElementById("price").value = price;
+    document.getElementById("categories").value = categories;
+    productList.removeChild(card);
+  });
 
   productList.appendChild(card);
 }
