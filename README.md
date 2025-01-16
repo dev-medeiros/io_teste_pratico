@@ -1,6 +1,6 @@
 # Cadastro de Produtos 🛒
 
-Este é um projeto simples de página web para cadastro de produtos, desenvolvido com HTML, CSS e JavaScript.
+Este é um projeto/teste simples de página web para cadastro de produtos, desenvolvido com HTML, CSS e JavaScript.
 
 ## 📋 Funcionalidades
 
@@ -36,10 +36,10 @@ O preço deve ser inserido com reais e centavos (exemplo: 10.50).
 Campos obrigatórios precisam ser preenchidos para o cadastro.
 Botões de edição e exclusão estão disponíveis nos cards para manipulação dos produtos cadastrados.
 
-📸 Prévia do Projeto
+### 📸 Prévia do Projeto  
 <img src="iotesteVisual.png" alt="Exemplo do layout" width="600">
 
-🛠️ Melhorias que podem ser Implementadas
+### 🛠️ Melhorias que podem ser Implementadas
 Armazenar os produtos cadastrados no LocalStorage para persistência de dados.
 Implementar filtros para buscar produtos por categorias ou faixa de preço.
 Adicionar suporte para imagens nos produtos.
