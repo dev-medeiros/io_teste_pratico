@@ -11,7 +11,7 @@ function createProductCard(name, description, price, categories) {
     <div>
       <h3>${name}</h3>
       <p>${description}</p>
-      <p><strong>Preço:</strong> R$${price.toFixed(2)}</p>
+      <p><strong>Preço:</strong> R$${price.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</p>
       <p><strong>Categorias:</strong> ${categories}</p>
     </div>
     <div>
@@ -47,11 +47,18 @@ form.addEventListener("submit", (event) => {
   // Obtendo valores dos campos do formulário
   const name = document.getElementById("name").value;
   const description = document.getElementById("description").value;
-  const price = parseFloat(document.getElementById("price").value);
+  const priceInput = document.getElementById("price").value;
   const categories = document.getElementById("categories").value;
 
-  // Validações básicas
-  if (!name || !description || !price || !categories) {
+  // Validar o campo de preço
+  const price = parseFloat(priceInput);
+  if (isNaN(price) || price <= 0) {
+    alert("Por favor, insira um preço válido!");
+    return;
+  }
+
+  // Validações gerais
+  if (!name || !description || !categories) {
     alert("Por favor, preencha todos os campos!");
     return;
   }
