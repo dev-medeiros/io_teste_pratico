@@ -14,7 +14,16 @@ function createProductCard(name, description, price, categories) {
       <p><strong>Preço:</strong> R$${price.toFixed(2)}</p>
       <p><strong>Categorias:</strong> ${categories}</p>
     </div>
+    <div>
+      <button class="delete-btn">Apagar</button>
+    </div>
   `;
+
+  // Botão Apagar
+  card.querySelector(".delete-btn").addEventListener("click", () => {
+    productList.removeChild(card);
+  });
+
 
   productList.appendChild(card);
 }
