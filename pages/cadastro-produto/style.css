@@ -1,78 +1,89 @@
+/* Estilo geral do corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f9f9f9;
-    background-image: url('img/background-cadastro.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 600px;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input, textarea, button {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  button {
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-    border: none;
-    transition: background 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  #product-list {
-    margin-top: 20px;
-  }
-  
-  .card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 15px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .card button {
-    margin-left: 10px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  /* Adiciona uma imagem de fundo */
+  background-image: url('img/background-cadastro.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Container principal para centralizar o conteúdo */
+.container {
+  width: 90%;
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do título principal */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Estilo do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Estilo dos rótulos dos campos do formulário */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Estilo dos campos de entrada de texto, área de texto e botão */
+input, textarea, button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Estilo do botão */
+button {
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo da lista de produtos */
+#product-list {
+  margin-top: 20px;
+}
+
+/* Estilo dos cards de produtos */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo dos botões dentro dos cards */
+.card button {
+  margin-left: 10px;
+}
